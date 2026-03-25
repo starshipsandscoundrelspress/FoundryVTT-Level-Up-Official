@@ -12,6 +12,7 @@
 			"destiny": "Destiny",
 			"heritage": "Heritage",
 			"feature": "Feature",
+      "hackingManeuver": "Hacking Maneuver",
 			"maneuver": "Maneuver",
 			"object": "Object",
 			"spell": "Spell"
@@ -1398,6 +1399,28 @@
 		"recoveryConfigPrompt": "Recover Exertion on rest?",
 		"title": "Exertion"
 	},
+  "A5e.hackingManeuvers": {
+    "dicePool": "Hacking Dice Pool",
+    "dieCosts": {
+      "1": "1 Die",
+      "2": "2 Dice",
+      "3": "3 Dice",
+      "4": "4 Dice",
+      "5": "5 Dice"
+    },
+    "diceDeducted": "Dice deducted from pool",
+    "dicePoolRoll": "Hacking Dice Pool Roll",
+    "diceRolled": "Dice Rolled",
+    "poolRolled": "Dice Pool Rolled",
+    "remaining": "Remaining Dice",
+    "rollPool": "Roll Pool",
+    "rollPoolTooltip": "Roll the hacking dice pool and remove dice showing 6",
+    "sixes": "Sixes Rolled",
+    "error": {
+        "insufficientDice": "Not enough dice in the pool for this maneuver!",
+        "noDiceToRoll": "No dice remaining in the pool!"
+    }
+  },
 	"A5E.expertiseDie": {
 		"dieSpecific": "{dieSize} Expertise",
 		"title": "Expertise Die"
@@ -2444,6 +2467,7 @@
 		"features": "Features",
 		"featureProperties": "Feature Properties",
 		"grants": "Grants",
+    "hackingManeuvers": "Hacking Maneuvers",
 		"inventory": "Inventory",
 		"macro": "Macro",
 		"maneuvers": "Maneuvers",

@@ -9,6 +9,7 @@ import { A5EFeatureData } from './FeatureDataModel';
 import { A5EManeuverData } from './ManeuverDataModel';
 import { A5EObjectData } from './ObjectDataModel';
 import { A5ESpellData } from './SpellDataModel';
+import { A5EHackingManeuverData } from './HackingMaenuverDataModel';
 
 const itemDataModels = {
 	archetype: A5EArchetypeData,
@@ -20,6 +21,7 @@ const itemDataModels = {
 
 	feature: A5EFeatureData,
 	maneuver: A5EManeuverData,
+	hackingManeuver: A5EHackingManeuverData,
 	object: A5EObjectData,
 	spell: A5ESpellData,
 };
@@ -39,6 +41,7 @@ declare global {
 
 			feature: A5EFeatureData;
 			maneuver: A5EManeuverData;
+			hackingManeuver: A5EHackingManeuverData;
 			object: A5EObjectData;
 			spell: A5ESpellData;
 		};

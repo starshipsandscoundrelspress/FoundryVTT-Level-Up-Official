@@ -270,9 +270,9 @@
 		}
 	},
 	"compatibility": {
-		"minimum": "12",
-		"verified": "12",
-		"maximum": "12"
+		"minimum": "13",
+		"verified": "13",
+		"maximum": "13"
 	},
 	"url": "https://github.com/Pjb518/FoundryVTT-Level-Up-Official",
 	"manifest": "https://github.com/Pjb518/FoundryVTT-Level-Up-Official/releases/latest/download/system.json",

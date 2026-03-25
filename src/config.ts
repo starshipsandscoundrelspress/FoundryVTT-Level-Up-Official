@@ -502,6 +502,7 @@ const damageColors = {
 const defaultActorImportCompendia = {
 	inventory: 'a5e.a5e-adventuring-gear',
 	maneuvers: 'a5e.a5e-maneuvers',
+  hackingManeuvers: 'a5e.a5e-hacking-maneuvers',
 	spells: 'a5e.a5e-spells',
 };
 
@@ -581,6 +582,7 @@ const itemTypes = {
 	maneuver: 'TYPES.Item.maneuver',
 	object: 'TYPES.Item.object',
 	spell: 'TYPES.Item.spell',
+  hackingManeuver: 'TYPES.Item.hackingManeuver',
 };
 
 /**
@@ -658,8 +660,15 @@ const languages = {
 	undercommon: 'A5E.languages.undercommon',
 };
 
+const hackingManeuverDieCosts = {
+  1: 'A5E.hackingManeuvers.dieCosts.1',
+  2: 'A5E.hackingManeuvers.dieCosts.2',
+  3: 'A5E.hackingManeuvers.dieCosts.3',
+  4: 'A5E.hackingManeuvers.dieCosts.4',
+  5: 'A5E.hackingManeuvers.dieCosts.5',
+};
+
 const maneuverDegrees = {
-	0: 'A5E.maneuvers.degrees.basic',
 	1: 'A5E.maneuvers.degrees.1',
 	2: 'A5E.maneuvers.degrees.2',
 	3: 'A5E.maneuvers.degrees.3',
@@ -2067,6 +2076,7 @@ const A5E = {
 	equippedStates,
 	expertiseDiceSidesMap,
 	featureTypes,
+	hackingManeuverDieCosts,
 	healingTypes,
 	healingColors,
 	itemRarity,

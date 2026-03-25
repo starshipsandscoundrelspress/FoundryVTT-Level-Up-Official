@@ -20,6 +20,7 @@
     import ActorSkillsPage from "../components/pages/ActorSkillsPage.svelte";
     import ActorSpellsPage from "../components/pages/ActorSpellsPage.svelte";
     import NewNavigationBar from "../components/navigation/NewNavigationBar.svelte";
+    import ActorHackingManeuversPage from "../components/pages/ActorHackingManeuversPage.svelte";
 
     import ActorSheetTempSettingsStore from "../../stores/ActorSheetTempSettingsStore";
 
@@ -92,6 +93,13 @@
                 component: ActorSpellsPage,
                 display: actor.flags?.a5e?.showSpellTab,
             },
+            {
+                name: "hackingManeuvers",
+                label: "A5E.tabs.hackingManeuvers",
+                icon: "fa-solid fa-computer-mouse",
+                component: ActorHackingManeuversPage,
+                display: actor.flags?.a5e?.showHackingManeuverTab,
+            },
             // {
             //     name: "biography",
             //     label: "A5E.tabs.biography",
@@ -125,8 +133,7 @@
                 hasSubNavigation: true,
                 display:
                     !actor.pack &&
-                    actor.permission !==
-                        CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER.OBSERVER,
+                    actor.permission !== CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER,
             },
         ];
     }
@@ -137,7 +144,7 @@
         tempSettings = store;
     });
 
-    const actor: TJSDocument = document;
+    const actor = document;
 
     // Required to get the tabs to update as the actor flags change
     let tabs = getTabs($actor);
